@@ -19,11 +19,10 @@ Template.dropsList.events({
       img: dropObject.img, 
       createdAt: new Date() // current time
     });
+    
     setTimeout(function(){
-	    var objDiv = $("#rsdl-data");
-	    var child = $("#rsdl-data tr:last-child")
-		objDiv.scrollTo("max",500);
-	},100);
+	    $("#rsdl-data").scrollTo("max", 500);
+	}, 100);
 
     return false;
   }
